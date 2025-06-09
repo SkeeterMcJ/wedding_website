@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RSVP</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>RSVP</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="registry.html">Registry</a>
+      <a href="location.html">Wedding Location</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="things-to-do.html">Things to Do</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="rsvpForm">
+      <label>Name: <input type="text" name="name" required /></label><br />
+      <label>Will you attend?
+        <select name="attendance" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </label><br />
+      <label>Comments: <textarea name="comments"></textarea></label><br />
+      <button type="submit">Submit RSVP</button>
+    </form>
+    <p id="responseMessage"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SyDan Enterprises</p>
+  </footer>
+</body>
+</html>
