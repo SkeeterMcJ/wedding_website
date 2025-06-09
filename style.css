@@ -6,6 +6,29 @@ body {
   color: #333;
 }
 
+/* Hero image with overlaid text */
+.hero-image {
+  position: relative;
+  background-image: url('bench.JPG'); /* Replace with actual path */
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-family: 'Georgia', serif;
+}
+
+/* Header styling */
 header {
   background-color: #e1ccec;
   padding: 20px;
@@ -16,17 +39,20 @@ header h1 {
   margin: 0;
 }
 
+/* Navigation styling */
 nav a {
   margin: 0 15px;
   color: #444;
   text-decoration: none;
 }
 
+/* Main content */
 main {
   padding: 20px;
   text-align: center;
 }
 
+/* Footer */
 footer {
   text-align: center;
   background: #eee;
