@@ -28,7 +28,7 @@ body {
   font-family: 'Georgia', serif;
 }
 
-.hero-image2 {
+.emerson-image {
   position: relative;
   background-image: url('emerson_1.png'); /* Replace with actual path */
   height: 400px;
@@ -41,7 +41,7 @@ body {
   text-align: center;
 }
 
-.hero-text2 {
+.emerson-text {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
   padding: 20px 40px;
   border-radius: 10px;
