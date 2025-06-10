@@ -10,7 +10,7 @@ body {
 .hero-image {
   position: relative;
   background-image: url('bench.JPG'); /* Replace with actual path */
-  height: 400px;
+  height: 800px;
   background-size: cover;
   background-position: center;
   display: flex;
