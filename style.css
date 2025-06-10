@@ -1,75 +1,56 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f7f6;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f7f6;
   color: #333;
 }
 
-/* Hero image with overlaid text */
+/* Fullscreen hero image with overlaid nav and text */
 .hero-image {
   position: relative;
-  background-image: url('bench.JPG'); /* Replace with actual path */
   height: 100vh;
+  background-image: url('bench.JPG'); /* Ensure correct path and filename */
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
-  color: white;
+  align-items: center;
   text-align: center;
+}
+
+/* Overlay navigation at top of hero */
+.hero-image header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(225, 204, 236, 0.85); /* translucent lilac */
+  padding: 15px 0;
+  text-align: center;
+  z-index: 10;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
   padding: 20px 40px;
   border-radius: 10px;
   font-size: 2rem;
   font-family: 'Georgia', serif;
-}
-
-.emerson-image {
-  position: relative;
-  background-image: url('emerson_1.png'); /* Replace with actual path */
-  height: 400px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
-  text-align: center;
-}
-
-.emerson-text {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent dark overlay */
-  padding: 20px 40px;
-  border-radius: 10px;
-  font-size: 2rem;
-  font-family: 'Georgia', serif;
-}
-
-/* Header styling */
-header {
-  background-color: #e1ccec;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-}
-
-/* Navigation styling */
-nav a {
-  margin: 0 15px;
-  color: #444;
-  text-decoration: none;
 }
 
 /* Main content */
 main {
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
