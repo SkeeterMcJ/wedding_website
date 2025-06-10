@@ -38,14 +38,11 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-
-nav b {
-  margin: 0 15px;
-  color: #FFFFFF;
-  text-decoration: none;
+/* Nav style for home page */
+body.home-page nav a {
+  color: white;
   font-weight: bold;
 }
-
 .hero-text {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
   padding: 20px 40px;
