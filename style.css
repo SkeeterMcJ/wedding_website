@@ -39,10 +39,10 @@ nav a {
   font-weight: bold;
 }
 /* Nav style for home page */
-body.home-page nav a {
+.nav-home a {
   color: white;
-  font-weight: bold;
 }
+
 .hero-text {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
   padding: 20px 40px;
