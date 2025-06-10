@@ -43,6 +43,28 @@ nav a {
   color: white;
 }
 
+.nav-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav-btn {
+  display: inline-block;
+  background-color: #d8bfd8; /* light purple */
+  color: #333;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #c19cd6;
+}
+
 .hero-text {
   background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
   padding: 20px 40px;
