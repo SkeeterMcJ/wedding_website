@@ -5,18 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wedding Location</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .map-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .map-box {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
 
   <!-- Hero section with image and text -->
   <div class="emerson-image">
     <div class="emerson-text">
-      <h1>Emerson Hall</h1>
-      <p>Pretty White Building</p>
+      <h1>Ceremony & Reception</h1>
     </div>
   </div>
 
-  <header>
+  <main>
+     <h1>Wedding Weekend Timeline</h1>
+    <section class="timeline-section">
+    <div class="timeline-container">
+    <div class="timeline-event">
+      <h3>Friday, May 22</h3>
+      <p><strong>6:00 PM</strong><br>Welcome Dinner at The Reserve</p>
+    </div>
+    <div class="timeline-event">
+      <h3>Saturday, May 23</h3>
+      <p><strong>4:00 PM</strong><br>Ceremony at Gabhart Chapel</p>
+    </div>
+    <div class="timeline-event">
+      <h3>Saturday, May 23</h3>
+      <p><strong>5:30 PM</strong><br>Reception at Emerson Hall</p>
+    </div>
+    </div>
+</section>
+
+    <h1>Directions</h1>
+    <div class="map-container">
+      <div class="map-box">
+        <p>The ceremony will take place at:</p>
+        <p><strong>Herbert C Gabhart Chapel, Belmont University, 1900 Belmont Blvd, Nashville, TN 37212</strong></p>
+        <iframe src="https://www.google.com/maps?q=Belmont+University,+TN&output=embed"></iframe>
+      </div>
+      <div class="map-box">
+        <p>The reception will take place at:</p>
+        <p><strong>Emerson Hall, 2512 Gallatin Ave, Nashville, TN 37206</strong></p>
+        <iframe src="https://www.google.com/maps?q=Emerson+Hall,+TN&output=embed"></iframe>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
     <nav>
       <a href="index.html">Home</a>
       <a href="registry.html">Registry</a>
@@ -24,17 +76,8 @@
       <a href="rsvp.html">RSVP</a>
       <a href="things-to-do.html">Things to Do</a>
     </nav>
-  </header>
-
-  <main>
-    <p>The ceremony will take place at:</p>
-    <p><strong>Emerson Hall, 2512 Gallatin Ave, Nashville, TN 37206</strong></p>
-    <iframe src="https://www.google.com/maps?q=Emerson+Hall,+TN&output=embed" width="100%" height="300"></iframe>
-  </main>
-  
-  <footer>
     <p>&copy; 2025 SyDan Enterprises</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
