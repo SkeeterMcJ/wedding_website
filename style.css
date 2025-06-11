@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: #f9f7f6;
+  background: #e1ccec;
   color: #333;
 }
 
@@ -11,7 +11,7 @@ html, body {
 .hero-image {
   position: relative;
   height: 100vh;
-  background-image: url('bench.JPG'); /* Ensure correct path and filename */
+  background-image: url('images/bench.JPG'); /* Ensure correct path and filename */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -66,7 +66,7 @@ nav a {
 }
 
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  /*background-color: rgba(0, 0, 0, 0.5); *//* semi-transparent overlay */
   padding: 20px 40px;
   border-radius: 10px;
   font-size: 2rem;
@@ -83,13 +83,13 @@ main {
 /* Footer */
 footer {
   text-align: center;
-  background: #eee;
+  background: #e1ccec;
   padding: 10px;
 }
 
 .emerson-image {
   position: relative;
-  background-image: url('emerson_1.png'); /* Replace with actual path */
+  background-image: url('images/emerson_1.png'); /* Replace with actual path */
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -106,6 +106,7 @@ footer {
   border-radius: 10px;
   font-size: 2rem;
   font-family: 'Georgia', serif;
+  color: #e1ccec;
 }
 
 /* Header styling */
@@ -117,4 +118,65 @@ header {
 
 header h1 {
   margin: 0;
+}
+
+.countdown {
+  text-align: center;
+}
+
+#timer span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.timeline-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 40px 20px;
+  position: relative;
+}
+
+.timeline-container {
+  display: flex;
+  justify-content: center; /* Center child elements */
+  align-items: center;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  scroll-snap-type: x mandatory;
+  text-align: center;
+  margin: 0 auto;
+}
+.timeline-event {
+  flex: 0 0 auto;
+  width: 250px;
+  background-color: #f4f0f8;
+  border: 2px solid #c6a9d8;
+  border-radius: 20px;
+  padding: 20px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.timeline-event:hover {
+  background-color: #e8d3f2;
+  transform: scale(1.05);
+  text-align: center;
+}
+
+.timeline-event h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #6b3074;
+}
+
+.timeline-event.active {
+  background-color: #d6b5e0;
+  border-color: #8c4c99;
 }
